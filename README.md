@@ -1,7 +1,10 @@
 # regenerator
 
 ```js
-const App = recontainer(function*() {
+import regenerator from '@astrocoders/regenerator'
+...
+
+const App = regenerator(function*() {
   const { loading, data } = yield props => <Query {...props} />;
   const { time } = yield props => <Time {...props} />;
 
@@ -30,9 +33,18 @@ Compose HOCs imperatively like async/await. No callback hell!
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/npm-package
 
+## Install
+
+```
+yarn add @astrocoders/regenerator
+```
+or
+```
+npm install --save @astrocoders/regenerator
+```
+
 ## Why
-Render props are amazing to make provide more functionality to your component. But once you need to 
-stack a bunch of them you get what recalls a lot the callback hell.
+Render props are amazing for providing more functionality but once you need to stack a bunch of them you get what recalls a painful callback hell.
 
 ```js
 <Query>
