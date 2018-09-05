@@ -1,5 +1,25 @@
 # regenerator
 
+```js
+const App = recontainer(function*() {
+  const { loading, data } = yield props => <Query {...props} />;
+  const { time } = yield props => <Time {...props} />;
+
+  return (
+    <div className="App">
+      {loading ? (
+        <h1>Loading</h1>
+      ) : (
+        <div>
+          <h1>{`Hello, ${data.user.name}`}</h1>
+          <h2>The time is {time.toLocaleString()}!</h2>
+        </div>
+      )}
+    </div>
+  );
+});
+```
+
 [![npm package][npm-badge]][npm]
 
 Compose HOCs imperatively like async/await. No callback hell!
