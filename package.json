@@ -19,11 +19,14 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "immutagen": "^1.0.7"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "formik": "^1.1.2",
     "nwb": "0.23.x",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"

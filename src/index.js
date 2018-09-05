@@ -1,9 +1,16 @@
-import React, {Component} from 'react'
+import immutagen from 'immutagen'
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export default component => props => {
+  const generator = immutagen(component);
+  const compose = context => {
+    const value = context.value;
+    return typeof value === "function"
+      ? value({
+          ...props,
+          children: values => compose(context.next(values))
+        })
+      : value;
+  };
+
+  return compose(generator(props));
+};
