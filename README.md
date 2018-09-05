@@ -4,6 +4,9 @@
 
 Compose HOCs imperatively like async/await. No callback hell!
 
+[Live demo](http://astrocoders.com/regenerator)
+[Source of demo](https://github.com/Astrocoders/regenerator/blob/master/demo/src/index.js#L42)
+
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/npm-package
 
@@ -55,7 +58,6 @@ export default component => props => {
 
 Suspense only allows you to evalulate a promise once. It does not allow you to trigger a re-render for a state update.
 And with regenerator you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
-
 
 ## Contributing
 
