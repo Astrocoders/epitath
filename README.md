@@ -2,10 +2,29 @@
 
 ```js
 import regenerator from '@astrocoders/regenerator'
+
+class Time extends React.Component {
+  state = {time: new Date()}
+
+  componentDidMount() {
+    // every second!
+    setInterval(() => {
+      this.setState({
+        time: new Date(),
+      })
+    }, 1000)
+  }
+
+  render() {
+    return this.props.children(this.state)
+  }
+}
+
 ...
 
 const App = regenerator(function*() {
   const { loading, data } = yield props => <Query {...props} />;
+  // Exactly what you are thinking, time is going to be update every 1 second.
   const { time } = yield props => <Time {...props} />;
 
   return (
