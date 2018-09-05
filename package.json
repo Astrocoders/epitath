@@ -1,7 +1,7 @@
 {
-  "name": "regenerator",
+  "name": "@astrocoders/regenerator",
   "version": "1.0.0",
-  "description": "regenerator React component",
+  "description": "Compose HOCs imperatively like async/await. No callback hell!",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -17,7 +17,8 @@
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test:watch": "nwb test-react --server",
+    "deploy": "gh-pages -d demo/dist"
   },
   "dependencies": {
     "immutagen": "^1.0.7"
@@ -27,15 +28,19 @@
   },
   "devDependencies": {
     "formik": "^1.1.2",
+    "gh-pages": "^1.2.0",
     "nwb": "0.23.x",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Astrocoders",
+  "homepage": "https://github.com/Astrocoders/regenerator",
   "license": "MIT",
   "repository": "",
   "keywords": [
-    "react-component"
+    "react-component",
+    "hocs",
+    "render-props",
+    "compose"
   ]
 }
