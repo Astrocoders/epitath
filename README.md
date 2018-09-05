@@ -23,7 +23,9 @@ class Time extends React.Component {
 ...
 
 const App = regenerator(function*() {
-  // Where `yield` you can roughly read `await`, where regenerator is awaiting the `render` work of the component  
+  // Where `yield` you can roughly read `await`, where regenerator is awaiting
+  // the `render` work of the component. But with the difference that the component
+  // can trigger a re-render.  
   const { loading, data } = yield props => <Query {...props} />;
   // Exactly what you are thinking, time is going to be update every 1 second.
   const { time } = yield props => <Time {...props} />;
