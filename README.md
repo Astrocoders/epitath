@@ -72,7 +72,7 @@ Render props are amazing for providing more functionality but once you need to s
 <Query>
   {({ data }) =>
     <Mutation>
-      {({ mutate, reuslt })=>
+      {({ mutate, result })=>
         <Form>
         etc
         </Form>
