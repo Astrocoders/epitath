@@ -1,10 +1,10 @@
-# regenerator
+# renderator
 
 ```js
-import regenerator from '@astrocoders/regenerator'
+import renderator from 'renderator'
 ...
 
-const App = regenerator(function*() {
+const App = renderator(function*() {
   const { loading, data } = yield props => <Query {...props} />;
   const { time } = yield props => <Time {...props} />;
 
@@ -27,8 +27,8 @@ const App = regenerator(function*() {
 
 Compose HOCs imperatively like async/await. No callback hell!
 
-[Live demo](http://astrocoders.com/regenerator)
-[Source of demo](https://github.com/Astrocoders/regenerator/blob/master/demo/src/index.js#L42)
+[Live demo](http://astrocoders.com/renderator)
+[Source of demo](https://github.com/Astrocoders/renderator/blob/master/demo/src/index.js#L42)
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/npm-package
@@ -36,11 +36,11 @@ Compose HOCs imperatively like async/await. No callback hell!
 ## Install
 
 ```
-yarn add @astrocoders/regenerator
+yarn add renderator
 ```
 or
 ```
-npm install --save @astrocoders/regenerator
+npm install --save renderator
 ```
 
 ## Why
@@ -64,7 +64,7 @@ Render props are amazing for providing more functionality but once you need to s
 
 Wait, we just mentioned "callback hell". So what if we had a function that would allow us to have a kind of sugar for continuation-passing-style? Or async/await feels.
 
-And that's exactly what regenerator is, it just takes care of the callbacks for you.
+And that's exactly what renderator is, it just takes care of the callbacks for you.
 The whole code is roughly this:
 
 ```js
@@ -89,7 +89,7 @@ export default component => props => {
 ## How is this different from Suspense?
 
 Suspense only allows you to evalulate a promise once. It does not allow you to trigger a re-render for a state update.
-And with regenerator you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
+And with renderator you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
 
 ## Contributing
 

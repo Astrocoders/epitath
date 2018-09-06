@@ -1,5 +1,5 @@
 {
-  "name": "@astrocoders/regenerator",
+  "name": "renderator",
   "version": "1.0.0",
   "description": "Compose HOCs imperatively like async/await. No callback hell!",
   "main": "lib/index.js",
