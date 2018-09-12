@@ -110,7 +110,7 @@ export default component => props => {
 
 ## How is this different from Suspense?
 
-Suspense only allows you to evalulate a promise once. It does not allow you to trigger a re-render for a state update.
+Suspense only allows you to evaluate a promise once. It does not allow you to trigger a re-render for a state update.
 And with regenerator you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
 
 ## Contributing
