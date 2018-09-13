@@ -27,7 +27,7 @@
     "react": "16.x"
   },
   "devDependencies": {
-    "formik": "^1.1.2",
+    "formik": "^1.3.0",
     "gh-pages": "^1.2.0",
     "nwb": "0.23.x",
     "react": "^16.4.2",
