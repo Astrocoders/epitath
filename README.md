@@ -5,8 +5,8 @@ import renderator from 'renderator'
 ...
 
 const App = renderator(function*() {
-  const { loading, data } = yield props => <Query {...props} />;
-  const { time } = yield props => <Time {...props} />;
+  const { loading, data } = yield <Query />;
+  const { time } = yield <Time />;
 
   return (
     <div className="App">
