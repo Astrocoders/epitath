@@ -2,8 +2,8 @@
 
 
 <p align="center">
-## Epitaph
-_In memorian for HOCs and Render Props_
+<h2>Epitaph</h2>
+<i>In memorian for HOCs and Render Props</i>
 </p>
 
 ```js
