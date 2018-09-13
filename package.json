@@ -1,6 +1,6 @@
 {
-  "name": "renderator",
-  "version": "1.0.0",
+  "name": "epitath",
+  "version": "1.0.0-beta.1",
   "description": "Compose HOCs imperatively like async/await. No callback hell!",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -34,7 +34,7 @@
     "react-dom": "^16.4.2"
   },
   "author": "Astrocoders",
-  "homepage": "https://github.com/Astrocoders/regenerator",
+  "homepage": "https://github.com/Astrocoders/epitath",
   "license": "MIT",
   "repository": "",
   "keywords": [

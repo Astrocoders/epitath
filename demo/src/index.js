@@ -2,7 +2,7 @@ import React, {Fragment} from 'react'
 import {render} from 'react-dom'
 import {Formik} from 'formik'
 
-import regenerator from '../../src'
+import epitath from '../../src'
 
 class Query extends React.Component {
   state = {loading: true, data: null}
@@ -41,7 +41,7 @@ class Time extends React.Component {
 
 function WrapFormik({ children, ...props}){ return <Formik {...props} render={children} /> }
 
-const App = regenerator(function*() {
+const App = epitath(function*() {
 console.log('Rendering again!');
   const {loading, data} = yield <Query />
   const {time} = yield <Time/>
