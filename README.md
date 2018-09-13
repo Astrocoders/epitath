@@ -1,34 +1,16 @@
-# regenerator
+# epita✞h
+
+<p align="center">
+  <i>In memorian for HOCs and Render Props</i>
+</p>
 
 ```js
-import regenerator from '@astrocoders/regenerator'
-
-class Time extends React.Component {
-  state = {time: new Date()}
-
-  componentDidMount() {
-    // every second!
-    setInterval(() => {
-      this.setState({
-        time: new Date(),
-      })
-    }, 1000)
-  }
-
-  render() {
-    return this.props.children(this.state)
-  }
-}
-
+import epitath from 'epitath'
 ...
 
-const App = regenerator(function*() {
-  // Where `yield` you can roughly read `await`, where regenerator is awaiting
-  // the `render` work of the component. But with the difference that the component
-  // can trigger a re-render.  
-  const { loading, data } = yield props => <Query {...props} />;
-  // Exactly what you are thinking, time is going to be update every 1 second.
-  const { time } = yield props => <Time {...props} />;
+const App = epitath(function*() {
+  const { loading, data } = yield <Query />;
+  const { time } = yield <Time />;
 
   return (
     <div className="App">
@@ -49,8 +31,8 @@ const App = regenerator(function*() {
 
 Compose HOCs imperatively like async/await. No callback hell!
 
-[Live demo](http://astrocoders.com/regenerator)
-[Source of demo](https://github.com/Astrocoders/regenerator/blob/master/demo/src/index.js#L42)
+[Live demo](http://astrocoders.com/epitath)
+[Source of demo](https://github.com/Astrocoders/epitath/blob/master/demo/src/index.js#L42)
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/npm-package
@@ -58,11 +40,11 @@ Compose HOCs imperatively like async/await. No callback hell!
 ## Install
 
 ```
-yarn add @astrocoders/regenerator
+yarn add epitath
 ```
 or
 ```
-npm install --save @astrocoders/regenerator
+npm install --save epitath
 ```
 
 ## Why
@@ -86,7 +68,7 @@ Render props are amazing for providing more functionality but once you need to s
 
 Wait, we just mentioned "callback hell". So what if we had a function that would allow us to have a kind of sugar for continuation-passing-style? Or async/await feels.
 
-And that's exactly what regenerator is, it just takes care of the callbacks for you.
+And that's exactly what epitath is, it just takes care of the callbacks for you.
 The whole code is roughly this:
 
 ```js
@@ -110,8 +92,9 @@ export default component => props => {
 
 ## How is this different from Suspense?
 
-Suspense only allows you to evaluate a promise once. It does not allow you to trigger a re-render for a state update.
-And with regenerator you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
+Suspense only allows you to evalulate a promise once. It does not allow you to trigger a re-render for a state update.
+And with epitath you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
+
 
 ## Contributing
 

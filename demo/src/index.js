@@ -2,7 +2,7 @@ import React, {Fragment} from 'react'
 import {render} from 'react-dom'
 import {Formik} from 'formik'
 
-import regenerator from '../../src'
+import epitath from '../../src'
 
 class Query extends React.Component {
   state = {loading: true, data: null}
@@ -39,9 +39,12 @@ class Time extends React.Component {
   }
 }
 
-const App = regenerator(function*() {
-  const {loading, data} = yield props => <Query {...props} />
-  const {time} = yield props => <Time {...props} />
+function WrapFormik({ children, ...props}){ return <Formik {...props} render={children} /> }
+
+const App = epitath(function*() {
+console.log('Rendering again!');
+  const {loading, data} = yield <Query />
+  const {time} = yield <Time/>
 
   if (loading) return <h1>Loading</h1>
 
@@ -53,16 +56,13 @@ const App = regenerator(function*() {
     handleBlur,
     handleSubmit,
     isSubmitting,
-  } = yield props => (
-    <Formik
+  } = yield (
+    <WrapFormik
       initialValues={{
         // Use data from other HOCs!
         email: data.user.email,
         password: '',
       }}
-      // if the HOC accepts a `render` instead of a `child` function just
-      // forward the props.children regenerator gives you and it figures out the rest
-      render={props.children}
       validate={values => {
         // same as above, but feel free to move this into a class method now.
         let errors = {}
