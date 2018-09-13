@@ -54,7 +54,7 @@ Render props are amazing for providing more functionality but once you need to s
 <Query>
   {({ data }) =>
     <Mutation>
-      {({ mutate, reuslt })=>
+      {({ mutate, result })=>
         <Form>
         etc
         </Form>
@@ -94,6 +94,7 @@ export default component => props => {
 
 Suspense only allows you to evalulate a promise once. It does not allow you to trigger a re-render for a state update.
 And with epitath you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
+
 
 ## Contributing
 
