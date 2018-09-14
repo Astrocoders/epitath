@@ -1,7 +1,7 @@
 # epita✞h
 
 <p align="center">
-  <i>In memorian for HOCs and Render Props</i>
+  <i>In memoriam HOCs and Render Props</i>
 </p>
 
 ```js
