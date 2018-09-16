@@ -69,32 +69,36 @@ Render props are amazing for providing more functionality but once you need to s
 Wait, we just mentioned "callback hell". So what if we had a function that would allow us to have a kind of sugar for continuation-passing-style? Or async/await feels.
 
 And that's exactly what epitath is, it just takes care of the callbacks for you.
-The whole code is roughly this:
+The whole code is this:
 
 ```js
+import React from 'react'
 import immutagen from 'immutagen'
 
-export default component => props => {
-  const generator = immutagen(component);
-  const compose = context => {
-    const value = context.value;
-    return typeof value === "function"
-      ? value({
-          ...props,
-          children: values => compose(context.next(values))
-        })
-      : value;
-  };
+export default component => {
+  const generator = immutagen(component)
 
-  return compose(generator(props));
-};
+  const compose = context => {
+    const value = context.value
+    return context.next
+      ? React.cloneElement(value, null, values => compose(context.next(values)))
+      : value
+  }
+
+  function Epitath(props) {
+    return compose(generator(props))
+  }
+
+  Epitath.displayName = `EpitathContainer(${component.displayName || 'anonymous'})`
+
+  return Epitath
+}
 ```
 
 ## How is this different from Suspense?
 
 Suspense only allows you to evalulate a promise once. It does not allow you to trigger a re-render for a state update.
 And with epitath you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
-
 
 ## Contributing
 
@@ -114,3 +118,7 @@ yarn start
 
 - [ ] Tests
 - [ ] TypeScript support
+
+### Acknowledgements 
+
+Thanks @jamiebuilds for the [suggestions](https://github.com/Astrocoders/epitath/issues/1) on how simplifying the API
