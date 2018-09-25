@@ -9,8 +9,8 @@ import epitath from 'epitath'
 ...
 
 const App = epitath(function*() {
-  const { loading, data } = yield <Query />;
-  const { time } = yield <Time />;
+  const { loading, data } = yield <Query />
+  const { time } = yield <Time />
 
   return (
     <div className="App">
@@ -23,8 +23,8 @@ const App = epitath(function*() {
         </div>
       )}
     </div>
-  );
-});
+  )
+})
 ```
 
 [![npm package][npm-badge]][npm]
@@ -50,7 +50,7 @@ npm install --save epitath
 ## Why
 Render props are amazing for providing more functionality but once you need to stack a bunch of them you get what recalls a painful callback hell.
 
-```js
+```jsx
 <Query>
   {({ data }) =>
     <Mutation>
