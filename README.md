@@ -34,7 +34,7 @@ Compose HOCs imperatively like async/await. No callback hell!
 [Live demo](http://astrocoders.com/epitath)
 [Source of demo](https://github.com/Astrocoders/epitath/blob/master/demo/src/index.js#L42)
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/npm-package.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/npm-package
 
 ## Install
