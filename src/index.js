@@ -1,21 +1,39 @@
 import React from 'react'
 import immutagen from 'immutagen'
 
-export default component => {
-  const generator = immutagen(component)
+const compose = context => {
+  const value = context.value
+  return context.next
+    ? React.cloneElement(value, null, values => compose(context.next(values)))
+    : value
+}
 
-  const compose = context => {
-    const value = context.value
-    return context.next
-      ? React.cloneElement(value, null, values => compose(context.next(values)))
-      : value
+export default Component => {
+  const original = Component.prototype.render
+  const displayName = `EpitathContainer(${Component.displayName || 'anonymous'})`
+  let generator
+
+  if (!original) {
+    generator = immutagen(Component)
+
+    return Object.assign(function Epitath(props) {
+      return compose(generator(props))
+    }, { displayName })
   }
 
-  function Epitath(props) {
-    return compose(generator(props))
+  Component.prototype.render = function() {
+    if (!generator) {
+      generator = immutagen(original.bind(this))
+    }
+
+    return compose(generator(this.props))
   }
 
-  Epitath.displayName = `EpitathContainer(${component.displayName || 'anonymous'})`
+  return class EpitathContainer extends React.Component {
+    static displayName = displayName
 
-  return Epitath
+    render() {
+      return <Component {...this.props} />
+    }
+  }
 }
