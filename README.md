@@ -4,6 +4,8 @@
   <i>In memoriam HOCs and Render Props</i>
 </p>
 
+### [Read the article](https://medium.com/p/9f76dd911f9e)
+
 ```js
 import epitath from 'epitath'
 ...
