@@ -18,6 +18,12 @@ export default Component => {
   }
 
   Component.prototype.render = function render() {
+    // Since we are calling a new function to be called from here instead of
+    // from a component class, we need to ensure that the render method is
+    // invoked against `this`. We only need to do this binding and creation of
+    // this function once, so we cache it by adding it as a property to this
+    // new render method which avoids keeping the generator outside of this
+    // method's scope.
     if (!render.generator) {
       render.generator = immutagen(original.bind(this))
     }
