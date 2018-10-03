@@ -1,0 +1,82 @@
+{
+  "projectName": "epitath",
+  "projectOwner": "Astrocoders",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "jamiebuilds",
+      "name": "Jamie",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/952783?v=4",
+      "profile": "https://jamie.build/",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
+    },
+    {
+      "login": "eliperelman",
+      "name": "Eli Perelman",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/285899?v=4",
+      "profile": "http://eliperelman.com",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
+    },
+    {
+      "login": "grsabreu",
+      "name": "Gabriel Rubens",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1283200?v=4",
+      "profile": "https://medium.com/@_gabrielrubens",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
+    },
+    {
+      "login": "medson10",
+      "name": "Medson Oliveira",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/17956325?v=4",
+      "profile": "https://github.com/medson10",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
+    },
+    {
+      "login": "georgelima",
+      "name": "George Lima",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/16995184?v=4",
+      "profile": "https://github.com/georgelima",
+      "contributions": [
+        "ideas",
+        "code"
+      ]
+    },
+    {
+      "login": "eliabejr",
+      "name": "Eliabe Júnior",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/8146889?v=4",
+      "profile": "http://eliabejr.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "guilhermedecampo",
+      "name": "Guilherme Decampo",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4806269?v=4",
+      "profile": "https://astrocoders.com",
+      "contributions": [
+        "ideas"
+      ]
+    }
+  ]
+}
