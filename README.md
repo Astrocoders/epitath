@@ -1,4 +1,5 @@
 # epita✞h
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 <p align="center">
   <i>In memoriam HOCs and Render Props</i>
@@ -124,3 +125,15 @@ yarn start
 ### Acknowledgements 
 
 Thanks @jamiebuilds for the [suggestions](https://github.com/Astrocoders/epitath/issues/1) on how simplifying the API
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars0.githubusercontent.com/u/952783?v=4" width="100px;"/><br /><sub><b>Jamie</b></sub>](https://jamie.build/)<br />[🤔](#ideas-jamiebuilds "Ideas, Planning, & Feedback") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
