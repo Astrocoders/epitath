@@ -7,7 +7,7 @@
     "README.md"
   ],
   "imageSize": 100,
-  "commit": true,
+  "commit": false,
   "contributors": [
     {
       "login": "jamiebuilds",
@@ -87,6 +87,24 @@
         "ideas",
         "question",
         "example"
+      ]
+    },
+    {
+      "login": "erjanmx",
+      "name": "Erjan Kalybek",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4899432?v=4",
+      "profile": "https://mssg.me/emx",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "hanford",
+      "name": "Jack Hanford",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2148168?v=4",
+      "profile": "http://jackhanford.com/",
+      "contributions": [
+        "doc"
       ]
     }
   ]
