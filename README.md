@@ -1,5 +1,5 @@
 # epita✞h
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 <p align="center">
   <i>In memoriam HOCs and Render Props</i>
@@ -132,8 +132,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/u/952783?v=4" width="100px;"/><br /><sub><b>Jamie</b></sub>](https://jamie.build/)<br />[🤔](#ideas-jamiebuilds "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/285899?v=4" width="100px;"/><br /><sub><b>Eli Perelman</b></sub>](http://eliperelman.com)<br />[🤔](#ideas-eliperelman "Ideas, Planning, & Feedback") |
-| :---: | :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/952783?v=4" width="100px;"/><br /><sub><b>Jamie</b></sub>](https://jamie.build/)<br />[🤔](#ideas-jamiebuilds "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/285899?v=4" width="100px;"/><br /><sub><b>Eli Perelman</b></sub>](http://eliperelman.com)<br />[🤔](#ideas-eliperelman "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/1283200?v=4" width="100px;"/><br /><sub><b>Gabriel Rubens</b></sub>](https://medium.com/@_gabrielrubens)<br />[🤔](#ideas-grsabreu "Ideas, Planning, & Feedback") |
+| :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
