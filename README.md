@@ -1,5 +1,5 @@
 # epita✞h
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
 
 <p align="center">
   <i>In memoriam HOCs and Render Props</i>
@@ -134,6 +134,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- prettier-ignore -->
 | [<img src="https://avatars0.githubusercontent.com/u/952783?v=4" width="100px;"/><br /><sub><b>Jamie</b></sub>](https://jamie.build/)<br />[🤔](#ideas-jamiebuilds "Ideas, Planning, & Feedback") [💻](https://github.com/Astrocoders/epitath/commits?author=jamiebuilds "Code") | [<img src="https://avatars0.githubusercontent.com/u/285899?v=4" width="100px;"/><br /><sub><b>Eli Perelman</b></sub>](http://eliperelman.com)<br />[🤔](#ideas-eliperelman "Ideas, Planning, & Feedback") [💻](https://github.com/Astrocoders/epitath/commits?author=eliperelman "Code") | [<img src="https://avatars0.githubusercontent.com/u/1283200?v=4" width="100px;"/><br /><sub><b>Gabriel Rubens</b></sub>](https://medium.com/@_gabrielrubens)<br />[🤔](#ideas-grsabreu "Ideas, Planning, & Feedback") [💻](https://github.com/Astrocoders/epitath/commits?author=grsabreu "Code") | [<img src="https://avatars0.githubusercontent.com/u/17956325?v=4" width="100px;"/><br /><sub><b>Medson Oliveira</b></sub>](https://github.com/medson10)<br />[🤔](#ideas-medson10 "Ideas, Planning, & Feedback") [💻](https://github.com/Astrocoders/epitath/commits?author=medson10 "Code") | [<img src="https://avatars0.githubusercontent.com/u/16995184?v=4" width="100px;"/><br /><sub><b>George Lima</b></sub>](https://github.com/georgelima)<br />[🤔](#ideas-georgelima "Ideas, Planning, & Feedback") [💻](https://github.com/Astrocoders/epitath/commits?author=georgelima "Code") | [<img src="https://avatars0.githubusercontent.com/u/8146889?v=4" width="100px;"/><br /><sub><b>Eliabe Júnior</b></sub>](http://eliabejr.com)<br />[💻](https://github.com/Astrocoders/epitath/commits?author=eliabejr "Code") [🎨](#design-eliabejr "Design") | [<img src="https://avatars3.githubusercontent.com/u/4806269?v=4" width="100px;"/><br /><sub><b>Guilherme Decampo</b></sub>](https://astrocoders.com)<br />[🤔](#ideas-guilhermedecampo "Ideas, Planning, & Feedback") |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/8618687?v=4" width="100px;"/><br /><sub><b>gtkatakura</b></sub>](https://github.com/gtkatakura)<br />[🤔](#ideas-gtkatakura "Ideas, Planning, & Feedback") [💬](#question-gtkatakura "Answering Questions") [💡](#example-gtkatakura "Examples") |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
