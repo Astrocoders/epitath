@@ -103,6 +103,16 @@ export default component => {
 Suspense only allows you to evalulate a promise once. It does not allow you to trigger a re-render for a state update.
 And with epitath you can even use Formik, Apollo optimistic, React Powerplug and Smalldots tooling and etc!
 
+## BTW it's epitaph not "epitath"
+
+"These Astrocoders dudes simply don't know how to spell words in English!" 
+
+Actually it was intended, for 2 reasons:
+
+1. We wanted to put a cross as icon of the package
+2. Epitaph is already taken in NPM
+
+
 ## Contributing
 
 ### Steps to get it running
