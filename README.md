@@ -69,7 +69,7 @@ Render props are amazing for providing more functionality but once you need to s
 
 ## How
 
-Wait, we just mentioned "callback hell". So what if we had a function that would allow us to have a kind of sugar for continuation-passing-style? Or async/await feels.
+Wait, we just mentioned "callback hell". So what if we had a function that would allow us to have a kind of sugar for continuation-passing-style à la async/await?
 
 And that's exactly what epitath is, it just takes care of the callbacks for you.
 The whole code is this:
@@ -96,6 +96,15 @@ export default component => {
 
   return Epitath
 }
+```
+
+**Note that** epitath will only yield the first argument of the render function. In order to consume multiple arguments, we recommend creating a wrapper component:
+
+```js
+const MutationWrapper = ({ children, ...props }) =>
+  <Mutation {...props}>{(mutate, result) => children({ mutate, result })}</Mutation>
+
+const { mutate, result } = yield <MutationWrapper />
 ```
 
 ## How is this different from Suspense?
