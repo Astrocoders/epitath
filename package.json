@@ -1,6 +1,6 @@
 {
   "name": "epitath",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Compose HOCs imperatively like async/await. No callback hell!",
   "main": "lib/index.js",
   "module": "es/index.js",
