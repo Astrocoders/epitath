@@ -7,6 +7,8 @@
 
 ### [Read the article](https://medium.com/p/9f76dd911f9e)
 
+### Also, we think you may want to take a look on [React Hooks API now](https://reactjs.org/docs/hooks-intro.html)
+
 ```js
 import epitath from 'epitath'
 ...
